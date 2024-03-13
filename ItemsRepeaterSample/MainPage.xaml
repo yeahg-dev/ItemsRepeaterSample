@@ -15,6 +15,9 @@
         </ItemsRepeater.ItemTemplate>
       </ItemsRepeater> 
     </ScrollViewer>
-    <Button Grid.Row="1" Content="Send" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="50" Width="100"/>
+    <StackPanel Grid.Row="1" Spacing="16" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Button Content="Send" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="50" Width="100"/>
+      <Button Content="Load More" Click="LoadMore_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="50" Width="100"/>
+    </StackPanel>
   </Grid>
 </Page>
