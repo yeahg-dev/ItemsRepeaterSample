@@ -8,6 +8,8 @@ public sealed partial class MainPage : Page
 {
     private ObservableCollection<string> items = new ObservableCollection<string>{"Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape", "Honeydew", "Kiwi", "Lemon", "Mango", "Nectarine"};
     private int newItemIndex = 0;
+    private int oldItemIndex = 0;
+
 
     public MainPage()
     {
@@ -28,5 +30,21 @@ public sealed partial class MainPage : Page
     {
         items.Add("New Item " + newItemIndex.ToString());
         newItemIndex++;
+    }
+
+     private void LoadMore_Click(object sender, RoutedEventArgs e)
+    {
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        items.Insert(0, "Old Message " + oldItemIndex.ToString());
+        oldItemIndex++;
     }
 }
