@@ -9,7 +9,7 @@
         <ItemsRepeater.ItemTemplate>
           <DataTemplate>
               <Border Background="White" BorderThickness="1" Margin="5" CornerRadius="8" Height="40" Width="200">
-                <TextBlock Text="{Binding}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black"/>
               </Border>                
           </DataTemplate>
         </ItemsRepeater.ItemTemplate>
